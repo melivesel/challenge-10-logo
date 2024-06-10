@@ -28,6 +28,8 @@ Example image:
 
 Video Walthrough of Usage hosted on Google Drive:
 
+[Video Walkthrough](https://drive.google.com/file/d/12VK6c9cQm1EIPy3vKJK8M0M9Tr3rr_aR/view)
+
 ## Credits
 
 * [SVG tutorial](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial)
