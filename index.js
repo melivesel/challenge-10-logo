@@ -1,6 +1,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const { Circle, Triangle, Square } = require('./lib/shapes');
+const { Text }= require('./lib/text');
 
 const questions = [
     {
@@ -44,10 +45,13 @@ function init() {
                 console.log('Invalid shape choice');
                 return;
         }
+        const textInstance = new Text (text, textcolor)
         const svgContent = `
         <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
-          ${shapeInstance.render()}
-          <text x="25" y="55" fill="${textcolor}">${text}</text>
+           <g transform="translate(100, 50)">
+            ${shapeInstance.render()}
+          </g>
+        ${textInstance.render()}
         </svg>
         `;
         writeToFile('logo.svg', svgContent);
